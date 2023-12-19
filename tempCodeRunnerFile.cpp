@@ -14,21 +14,19 @@ int main(){
 		else if(grade == 'C') count[2] += 1 ;
 		else if(grade == 'D') count[3] += 1 ;
 		else if(grade == 'F') count[4] += 1 ;
-		else if(grade == '0') ;
 		else{
-			cout << "Wrong input. Please input again." << "\n" ;
-			i-- ;
+			cout << "Wrong input. Please input again." ;
 		} 
 		i++ ;
 	}while(grade != '0');
 	
 	
-	cout << "In total "<< count[0] + count[1] + count[2] + count[3] + count[4] <<" students." << "\n" ;
+	cout << "In total ? students.";
 	cout << "A = " << count[0] <<", ";
 	cout << "B = " << count[1] <<", ";	
 	cout << "C = " << count[2] <<", ";
 	cout << "D = " << count[3] <<", ";
-	cout << "F = " << count[4] ;
+	cout << "F = " << count[4] <<", ";
 		
 	return 0;
 }
